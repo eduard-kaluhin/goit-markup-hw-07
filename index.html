@@ -26,13 +26,13 @@
   </head>
   <body>
     <header class="header">
-      <div class="conteiner header-conteiner">
+      <div class="header-conteiner conteiner">
+        <!--logo -->
+        <a class="header-logo link" href="./index.html"
+          ><span class="logo-web">Web</span>Studio</a
+        >
         <nav class="header-navig">
-          <!--logo-->
-          <a class="header-logo link" href="./index.html"
-            ><span class="logo-web">Web</span>Studio</a
-          >
-          <!--navigazia-->
+          <!-- < navigazia > -->
           <ul class="header-list list">
             <li class="header-item">
               <a class="header-link link current" href="./index.html">Studio</a>
@@ -60,18 +60,93 @@
             </li>
           </ul>
         </address>
+        <button class="menu-open js-open-menu" type="button">
+          <svg class="icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger-1"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu js-menu-conteiner">
+        <div class="conteiner">
+          <div class="menu-thumb">
+            <button class="menu-close js-close-menu" type="button">
+              <svg class="icon" width="8" height="8">
+                <use
+                  href="../images/icons.svg#icon-close-black-18dp-2-1-1"
+                ></use>
+              </svg>
+            </button>
+
+            <ul class="menu-site-nav">
+              <li class="menu-item">
+                <a class="menu-link current" href="./index.html">Studio</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-thumb">
+            <ul class="menu-address-nav">
+              <li class="menu-item">
+                <a class="menu-tel-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="menu-item">
+                <a class="menu-mail-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="menu-social">
+              <li class="menu-item">
+                <a class="menu-soc-link" href="">
+                  <svg class="menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-soc-link" href="">
+                  <svg class="menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-soc-link" href="">
+                  <svg class="menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-soc-link" href="">
+                  <svg class="menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
-      <!--hero-->
-      <section class="hero-section">
+      <!-- hero -->
+      <!-- <section class="hero-section">
         <div class="conteiner hero-conteiner">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
       <!--about-->
       <section class="about-section">
         <div class="conteiner">
@@ -116,9 +191,7 @@
             <li class="about-item">
               <div class="about-soc">
                 <svg class="about-icon" width="64" height="64">
-                  <use
-                    href="./images/icons.svg#icon-astronaut-1-1"
-                  ></use>
+                  <use href="./images/icons.svg#icon-astronaut-1-1"></use>
                 </svg>
               </div>
               <h3 class="about-subtitle">Technologies</h3>
@@ -130,7 +203,7 @@
           </ul>
         </div>
       </section>
-      <!--work-->
+      <!-- work-->
       <section class="work-section">
         <div class="conteiner">
           <h2 class="work-title">What are we doing</h2>
@@ -162,17 +235,21 @@
           </ul>
         </div>
       </section>
-      <!--personal-->
+      <!--personal -->
       <section class="personal-section">
-        <div class="personal">
+        <div class="conteiner">
           <h2 class="personal-title">Our Team</h2>
           <ul class="personal-list list">
             <li class="personal-item">
               <img
-                class="personal-pictures"
                 src="./images/img11.jpg"
                 alt="foto"
+                srcset="
+                  ./images/img11x1.jpg,
+                  ./images/img11x2.jpg
+                "
                 width="264"
+                height="260"
               />
               <div class="personal-pictures-subtitle">
                 <h3 class="personal-subtitle">Mark Guerrero</h3>
@@ -181,48 +258,44 @@
                   <li class="personal-soc-item">
                     <a class="personal-soc-link link" href>
                       <svg class="personal-soc-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-instagram-2-1"
-                        ></use>
+                        <use href="./images/icons.svg#icon-instagram-2-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="personal-soc-item">
                     <a class="personal-soc-link link" href>
                       <svg class="personal-soc-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-twitter-1-1"
-                        ></use>
+                        <use href="./images/icons.svg#icon-twitter-1-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="personal-soc-item">
                     <a class="personal-soc-link link" href>
                       <svg class="personal-soc-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-facebook-1-1"
-                        ></use>
+                        <use href="./images/icons.svg#icon-facebook-1-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="personal-soc-item">
                     <a class="personal-soc-link link" href>
                       <svg class="personal-soc-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-linkedin-1-1"
-                        ></use>
+                        <use href="./images/icons.svg#icon-linkedin-1-1"></use>
                       </svg>
                     </a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li>
-              <img
-                class="personal-pictures"
+            <li class="personal-item">
+               <img
                 src="./images/img12.jpg"
                 alt="foto"
+                srcset="
+                  ./images/img12x1.jpg,
+                  ./images/img12x2.jpg
+                "
                 width="264"
+                height="260"
               />
               <div class="personal-pictures-subtitle">
                 <h3 class="personal-subtitle">Tom Ford</h3>
@@ -231,48 +304,44 @@
                   <li class="personal-soc-item">
                     <a class="personal-soc-link link" href>
                       <svg class="personal-soc-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-instagram-2-1"
-                        ></use>
+                        <use href="./images/icons.svg#icon-instagram-2-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="personal-soc-item">
                     <a class="personal-soc-link link" href>
                       <svg class="personal-soc-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-twitter-1-1"
-                        ></use>
+                        <use href="./images/icons.svg#icon-twitter-1-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="personal-soc-item">
                     <a class="personal-soc-link link" href>
                       <svg class="personal-soc-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-facebook-1-1"
-                        ></use>
+                        <use href="./images/icons.svg#icon-facebook-1-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="personal-soc-item">
                     <a class="personal-soc-link link" href>
                       <svg class="personal-soc-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-linkedin-1-1"
-                        ></use>
+                        <use href="./images/icons.svg#icon-linkedin-1-1"></use>
                       </svg>
                     </a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li>
-              <img
-                class="personal-pictures"
+            <li class="personal-item">
+                <img
                 src="./images/img13.jpg"
                 alt="foto"
+                srcset="
+                  ./images/img13x1.jpg,
+                  ./images/img13x2.jpg
+                "
                 width="264"
+                height="260"
               />
               <div class="personal-pictures-subtitle">
                 <h3 class="personal-subtitle">Camila Garcia</h3>
@@ -281,48 +350,44 @@
                   <li class="personal-soc-item">
                     <a class="personal-soc-link link" href>
                       <svg class="personal-soc-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-instagram-2-1"
-                        ></use>
+                        <use href="./images/icons.svg#icon-instagram-2-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="personal-soc-item">
                     <a class="personal-soc-link link" href>
                       <svg class="personal-soc-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-twitter-1-1"
-                        ></use>
+                        <use href="./images/icons.svg#icon-twitter-1-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="personal-soc-item">
                     <a class="personal-soc-link link" href>
                       <svg class="personal-soc-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-facebook-1-1"
-                        ></use>
+                        <use href="./images/icons.svg#icon-facebook-1-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="personal-soc-item">
                     <a class="personal-soc-link link" href>
                       <svg class="personal-soc-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-linkedin-1-1"
-                        ></use>
+                        <use href="./images/icons.svg#icon-linkedin-1-1"></use>
                       </svg>
                     </a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li>
-              <img
-                class="personal-pictures"
+            <li class="personal-item">
+                <img
                 src="./images/img14.jpg"
                 alt="foto"
+                srcset="
+                  ./images/img14x1.jpg,
+                  ./images/img14x2.jpg
+                "
                 width="264"
+                height="260"
               />
               <div class="personal-pictures-subtitle">
                 <h3 class="personal-subtitle">Daniel Wilson</h3>
@@ -332,36 +397,28 @@
                   <li class="personal-soc-item">
                     <a class="personal-soc-link link" href>
                       <svg class="personal-soc-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-instagram-2-1"
-                        ></use>
+                        <use href="./images/icons.svg#icon-instagram-2-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="personal-soc-item">
                     <a class="personal-soc-link link" href>
                       <svg class="personal-soc-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-twitter-1-1"
-                        ></use>
+                        <use href="./images/icons.svg#icon-twitter-1-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="personal-soc-item">
                     <a class="personal-soc-link link" href>
                       <svg class="personal-soc-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-facebook-1-1"
-                        ></use>
+                        <use href="./images/icons.svg#icon-facebook-1-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="personal-soc-item">
                     <a class="personal-soc-link link" href>
                       <svg class="personal-soc-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-linkedin-1-1"
-                        ></use>
+                        <use href="./images/icons.svg#icon-linkedin-1-1"></use>
                       </svg>
                     </a>
                   </li>
@@ -371,6 +428,7 @@
           </ul>
         </div>
       </section>
+      <!-- `       customer -->
       <section class="customer">
         <div class="conteiner">
           <h2 class="customer-title">Customers</h2>
@@ -421,8 +479,8 @@
         </div>
       </section>
     </main>
-    <!--foter-->
-    <footer class="foter">
+    <!-- foter-->
+    <!-- <footer class="foter">
       <div class="conteiner foter-conteiner">
         <div class="foter-box">
           <a class="foter-logo link" href="./index.html">
@@ -476,7 +534,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <div class="overlay is-hidden" data-modal>
       <div class="modal">
         <form action class="contacts-form">
@@ -486,7 +544,9 @@
             <div class="input-wrapper">
               <input id="contacts-form-name" type="text" />
               <svg width="18" height="18">
-                <use href="./images/icons.svg#icon-person-black-18dp-1-2-1"></use>
+                <use
+                  href="./images/icons.svg#icon-person-black-18dp-1-2-1"
+                ></use>
               </svg>
             </div>
           </div>
@@ -509,19 +569,24 @@
             </div>
           </div>
           <label for="comments">Comment</label>
-          <textarea name="comments" id="comments" placeholder="Text input"></textarea>
-         
+          <textarea
+            name="comments"
+            id="comments"
+            placeholder="Text input"
+          ></textarea>
+
           <label class="accept-checkbox-field">
-            <input class="privacy-policy-checkbox visually-hidden" type="checkbox">
-          
+            <input
+              class="privacy-policy-checkbox visually-hidden"
+              type="checkbox"
+            />
+
             <svg width="16" height="16">
-              <use   
-                href="./images/icons.svg#checkbox"
-              ></use>
+              <use href="./images/icons.svg#checkbox"></use>
             </svg>
-          
+
             <p class="acceptence-policy-text">
-              I accept the terms and conditions of the 
+              I accept the terms and conditions of the
               <a class="privacy-policy" href>Privacy Policy</a>
             </p>
           </label>
@@ -531,13 +596,18 @@
         </form>
         <button class="btn-close" type="button" data-modal-close>
           <svg class="btn-close-icon" width="8" height="8">
-            <use
-              href="./images/icons.svg#icon-close-black-18dp-2-1-1"
-            ></use>
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
           </svg>
         </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
